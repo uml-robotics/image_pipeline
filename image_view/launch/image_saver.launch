@@ -1,0 +1,15 @@
+<launch>
+  <arg name="required" default="false" />
+
+  <!-- pass as arguments to node -->
+  <arg name="in_topic" default="image_raw" />
+
+  <!-- pass as private params -->
+  <arg name="filename_format" default="frame%04i.%s" />
+  <arg name="save_all_image" default="false" />
+
+  <node pkg="image_view" type="image_saver" name="image_saver" args="image:=$(arg in_topic)" output="screen" required="$(arg required)">
+    <param name="filename_format" value="$(arg filename_format)" />
+    <param name="save_all_image" value="$(arg save_all_image)" />
+  </node>
+</launch>

@@ -1,0 +1,9 @@
+*/build/
+*/bin/
+*/lib
+*/docs/
+*/cfg/cpp/
+*/cfg/*.cfgc
+stereo_image_proc/src/stereo_image_proc/
+image_rotate/src/image_rotate/
+image_proc/src/image_proc/
