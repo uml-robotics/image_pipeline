@@ -7,3 +7,4 @@
 stereo_image_proc/src/stereo_image_proc/
 image_rotate/src/image_rotate/
 image_proc/src/image_proc/
+camera_calibration/src/camera_calibration/
