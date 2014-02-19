@@ -94,6 +94,7 @@ void ImageNodelet::onInit()
 
   bool autosize;
   local_nh.param("autosize", autosize, false);
+  ROS_INFO("autosize=%s", (autosize)?"true":"false");
   
   std::string format_string;
   local_nh.param("filename_format", format_string, std::string("frame%04i.jpg"));
